@@ -14,16 +14,18 @@ const Navbar = () => {
             <div className="ml-10 flex items-baseline space-x-4">
               <Link to="/products" className="text-white hover:text-gray-300 px-3 py-2">Products</Link>
               <Link to="/developers" className="text-white hover:text-gray-300 px-3 py-2">Developers</Link>
-              <a href="#" className="text-white hover:text-gray-300 px-3 py-2">Solutions</a>
-              <a href="#" className="text-white hover:text-gray-300 px-3 py-2">Resources</a>
-              <a href="#" className="text-white hover:text-gray-300 px-3 py-2">Pricing</a>
+              <Link to="/solutions" className="text-white hover:text-gray-300 px-3 py-2">Solutions</Link>
+              <Link to="/resources" className="text-white hover:text-gray-300 px-3 py-2">Resources</Link>
+              <Link to="/pricing" className="text-white hover:text-gray-300 px-3 py-2">Pricing</Link>
             </div>
           </div>
           
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" className="text-white hover:text-gray-300">
-              Sign in
-            </Button>
+            <Link to="/signin">
+              <Button variant="ghost" className="text-white hover:text-gray-300">
+                Sign in
+              </Button>
+            </Link>
             <Button className="bg-white text-black hover:bg-gray-100">
               Contact sales
             </Button>
