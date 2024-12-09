@@ -1,5 +1,7 @@
 import Navbar from "@/components/Navbar";
 import StatsCard from "@/components/StatsCard";
+import Chatbot from "@/components/Chatbot";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -34,6 +36,9 @@ const Index = () => {
           </div>
         </div>
       </main>
+      
+      <Chatbot />
+      <Footer />
     </div>
   );
 };
