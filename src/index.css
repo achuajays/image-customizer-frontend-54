@@ -59,17 +59,15 @@
   animation: float 3s ease-in-out infinite;
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
   }
-  50% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  to {
+    transform: rotate(360deg);
   }
 }
 
-.animate-bounce {
-  animation: bounce 1s infinite;
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
 }
